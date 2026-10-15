@@ -1,0 +1,21 @@
+{
+  "name": "teckveho/veho-system-alert",
+  "description": "POST production job and application errors to the shared VEHO system alert app.",
+  "version": "1.0.0",
+  "require": {
+    "php": ">=7.4",
+    "illuminate/support": ">=5.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Veho\\SystemAlert\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Veho\\SystemAlert\\VehoAlertServiceProvider"
+      ]
+    }
+  }
+}
